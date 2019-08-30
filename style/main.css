@@ -1,6 +1,9 @@
 .container {
+    position: relative;
     width: 80%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 header img {
@@ -38,6 +41,22 @@ a {
     text-decoration-line: none;
 }
 
+main {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+}
+
+#title-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
 @media screen and (max-width: 730px) {
     nav {
         display: flex;
@@ -54,6 +73,10 @@ a {
 }
 
 @media screen and (max-width: 620px) {
+    .container {
+        width: 90%;
+    }
+
     .header-container {
         flex-direction: column;
         justify-content: center;
@@ -77,5 +100,9 @@ a {
 
     nav li {
         margin-left: 0px;
+    }
+
+    main {
+        top: 120px;
     }
 }
