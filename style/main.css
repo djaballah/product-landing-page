@@ -45,6 +45,9 @@ main {
     position: absolute;
     top: 70px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #title-container {
@@ -88,6 +91,40 @@ button:hover {
     background-color: orange;
     cursor: pointer;
 }
+
+.content-container {
+    width: 80%;
+    margin-top: 80px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+span {
+    width: 80px;
+    margin-right: 60px;
+    text-align: center;
+    color: orange;
+}
+
+.row div {
+
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+p {
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
 
 @media screen and (max-width: 730px) {
     nav {
@@ -134,7 +171,30 @@ button:hover {
         margin-left: 0px;
     }
 
+    .content-container {
+        width: 100%;
+    }
+
     main {
         top: 120px;
+    }
+    
+    span {
+        display: none;
+    }
+    
+    .row {
+        justify-content: center;
+
+    }
+
+    .row div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p {
+        text-align: center;
     }
 }
