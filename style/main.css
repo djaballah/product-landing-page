@@ -125,6 +125,14 @@ p {
     padding-left: 0px;
 }
 
+#video-section {
+    margin-top: 80px;
+}
+
+#video {
+    justify-content: center;
+}
+
 
 @media screen and (max-width: 730px) {
     nav {
