@@ -133,7 +133,7 @@ p {
     margin-top: 80px;
 }
 
-#video {
+.video-container {
     justify-content: center;
 }
 
