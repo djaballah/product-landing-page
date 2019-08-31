@@ -171,6 +171,25 @@ p {
     font-weight: 100;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+footer span {
+    width: auto;
+    margin-top: 5px;
+    color: #444;
+}
+
+footer a {
+    margin-left: 20px;
+}
+
 @media screen and (max-width: 730px) {
     .content-container {
         width: 100%;
